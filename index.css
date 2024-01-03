@@ -1,0 +1,239 @@
+
+:root{
+  --brand-color: #f1bda5;
+}
+
+/*------------*/
+/* Font family */
+/*-------------*/
+
+@font-face {
+  font-family: font1;
+  src: url(./fonts/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(./fonts/RubikWetPaint-Regular.ttf);
+}
+@font-face {
+  font-family: font3;
+  src: url(./fonts/TiltPrism-Regular.ttf);
+}
+@font-face {
+  font-family: font4;
+  src: url(./fonts/ZenTokyoZoo-Regular.ttf);
+}
+
+/*----------------*/
+/* basic stylings */
+/*----------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*------------------*/
+/* utility clases */
+/*------------------*/
+
+.fs-900{font-size: 4.3rem;}
+.fs-800{font-size: 3.5rem;}
+.fs-700{font-size: 3rem;}
+.fs-600{font-size: 2.5rem;}
+.fs-500{font-size: 2rem;}
+.fs-400{font-size: 1.7rem;}
+.fs-300{font-size: 1.4rem;}
+
+.ff-1{font-family: font1;}
+.ff-2{font-family: font2;}
+.ff-3{font-family: font3;}
+.ff-4{font-family: font4;}
+
+.letter-space1{letter-spacing: 0.3rem;}
+
+
+.bold{font-weight: bold;}
+.bolder{font-weight: bolder;}
+
+.relative{position: relative;}
+.absolute{position: absolute;}
+
+.text-white{color: rgb(255, 255, 255);}
+.text-white-light{color: rgba(255, 255, 255, 0.738);}
+.text-brand-color{color: #f1bda5;}
+.bg-brand-color{background-color: #f1bda5;}
+
+.border{border: 3px solid green;}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 2rem;
+}
+.gap{gap:var(--gap, 1rem);}
+
+.flex{display: flex;}
+
+
+/*--------------*/
+/* responsive background */
+/*------------------*/
+
+
+video{
+  position: fixed;
+  object-fit: cover;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    
+  
+}
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+
+  }
+}
+
+/*---------------*/
+/* header */
+/*---------------*/
+
+header{
+  display: grid;
+}
+
+h1{
+  transition: color 0.5s ease-in-out;
+}
+h1:hover{
+  color: var(--brand-color);
+}
+
+header::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.396);
+  z-index: -1;
+}
+p{
+  max-width: 50ch;
+}
+
+/*nav bar*/
+
+nav{
+  justify-content: space-between;
+  padding-inline: 2rem;
+  align-items: center;
+}
+nav  div{
+  align-items: center;
+  --gap: 2rem;
+  
+}
+nav div div{
+  transition: color 0.3s ease-out;
+}
+nav div div:hover{
+  color: #f1bda5;
+  cursor: pointer;
+}
+.iethub{
+  transition: color 0.3s ease-out;
+}
+.iethub:hover{
+  color: var(--brand-color);
+}
+
+
+
+nav img{
+  width: 3rem;
+}
+
+.join-us{
+  border: 2px solid rgba(255, 255, 255, 0.233);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: border 0.3s ease-in-out;
+}
+.join-us:hover,.join-us:focus{
+  border: 2px solid var(--brand-color);
+}
+
+
+/* Explore button */
+
+.explore-button{
+  padding: 0.75rem 2.5rem;
+  background-color: transparent;
+  border: none;
+  border: 1.5px solid #f1bda5;
+  transform-origin: bottom;
+  margin-top: 1rem;
+  
+}
+.explore-button::before{
+  content: '';
+  background-color: #f1bda5;
+  position: absolute;
+  inset: 0; 
+  transform: translateY(100%);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+}
+.explore-button:hover::before{
+  transform: translateY(0%);
+
+}
+.explore-button::after{
+  content: 'EXPLORE';
+  color: black;
+  position: absolute;
+  inset: 0;
+  transform: translateY(100%);
+  transform-origin: bottom;
+  transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out;
+  opacity: 0;
+}
+.explore-button:hover::after{
+  transform: translateY(29%);
+  opacity: 1;
+}
+
+/*--------------*/
+/* ---Heading1-- */
+/*---------------*/
+
+h1{
+  border-bottom: 2px solid var(--brand-color);
+  animation: border-color 2s ease-in-out infinite alternate;  
+}
+@keyframes border-color {
+  from{
+    border-bottom: 2px solid var(--brand-color);
+  }
+  to{
+    border-bottom: 2px solid #f1bda54e;
+  }
+  
+}
