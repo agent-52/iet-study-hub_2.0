@@ -1,6 +1,14 @@
 
 :root{
   --brand-color: #f1bda5;
+  --pink: 255,192,223;
+  --blueviolet: 196,158,249;
+  --green: 150,238,137;
+  --dark-green: 29,129,62;
+  --dark: 0,7,48;
+  --white: 255,255,255;
+  --light-blue: 135, 206, 250;
+  --orange: 255,156,89;
 }
 
 /*------------*/
@@ -63,7 +71,23 @@
 .text-white{color: rgb(255, 255, 255);}
 .text-white-light{color: rgba(255, 255, 255, 0.738);}
 .text-brand-color{color: #f1bda5;}
+.text-purple{color: rgb(var(--blueviolet));}
+.text-pink{color: rgb(var(--pink));}
+.text-green{color: rgb(var(--green));}
+.text-dark-green{color: rgb(var(--dark-green));}
+.text-dark-blue{color: rgb(var(--dark));}
+.text-light-blue{color: rgb(var(--light-blue))}
+.text-orange{color: rgb(var(--orange))}
+
+
 .bg-brand-color{background-color: #f1bda5;}
+.bg-white{background-color: rgb(255, 255, 255);}
+.bg-white-light{background-color: rgba(255, 255, 255, 0.738);}
+.bg-purple{background-color: rgb(var(--blueviolet));}
+.bg-pink{background-color: rgb(var(--pink));}
+.bg-green{background-color: rgb(var(--green));}
+.bg-dark-green{background-color: rgb(var(--dark-green));}
+.bg-dark-blue{background-color: rgb(var(--dark));}
 
 .border{border: 3px solid green;}
 
@@ -120,13 +144,6 @@ header{
   display: grid;
 }
 
-h1{
-  transition: color 0.5s ease-in-out;
-}
-h1:hover{
-  color: var(--brand-color);
-}
-
 header::before{
   content: '';
   position: absolute;
@@ -154,14 +171,14 @@ nav div div{
   transition: color 0.3s ease-out;
 }
 nav div div:hover{
-  color: #f1bda5;
+  color: rgb(var(--orange));
   cursor: pointer;
 }
 .iethub{
   transition: color 0.3s ease-out;
 }
 .iethub:hover{
-  color: var(--brand-color);
+  color: rgb(var(--orange));
 }
 
 
@@ -174,10 +191,11 @@ nav img{
   border: 2px solid rgba(255, 255, 255, 0.233);
   padding: 0.5rem 1rem;
   border-radius: 2rem;
-  transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .join-us:hover,.join-us:focus{
-  border: 2px solid var(--brand-color);
+  border: 2px solid rgb(var(--orange));
+  color: rgb(var(--orange));
 }
 
 
@@ -187,19 +205,19 @@ nav img{
   padding: 0.75rem 2.5rem;
   background-color: transparent;
   border: none;
-  border: 1.5px solid #f1bda5;
+  border: 1.5px solid rgb(var(--light-blue));
   transform-origin: bottom;
   margin-top: 1rem;
   
 }
 .explore-button::before{
   content: '';
-  background-color: #f1bda5;
+  background-color: rgb(var(--light-blue));
   position: absolute;
   inset: 0; 
   transform: translateY(100%);
   transform-origin: bottom;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 .explore-button:hover::before{
   transform: translateY(0%);
@@ -212,7 +230,7 @@ nav img{
   inset: 0;
   transform: translateY(100%);
   transform-origin: bottom;
-  transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.35s ease-in-out;
   opacity: 0;
 }
 .explore-button:hover::after{
@@ -225,15 +243,23 @@ nav img{
 /*---------------*/
 
 h1{
-  border-bottom: 2px solid var(--brand-color);
+  border-bottom: 2px solid rgb(var(--light-blue));
   animation: border-color 2s ease-in-out infinite alternate;  
 }
 @keyframes border-color {
   from{
-    border-bottom: 2px solid var(--brand-color);
+    border-bottom: 2px solid rgb(var(--light-blue));
   }
   to{
-    border-bottom: 2px solid #f1bda54e;
+    border-bottom: 2px solid #f1bda500;
   }
+  
+}
+
+h1{
+  transition: color 0.5s ease-in-out;
+}
+h1:hover{
+  color: rgb(var(--light-blue));
   
 }
