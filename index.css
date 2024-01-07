@@ -181,8 +181,6 @@ nav div div:hover{
   color: rgb(var(--orange));
 }
 
-
-
 nav img{
   width: 3rem;
 }
@@ -261,5 +259,36 @@ h1{
 }
 h1:hover{
   color: rgb(var(--light-blue));
+  
+}
+
+/*---------*/
+/*nav-list*/
+/*--------*/
+
+.nav-list{
+  opacity: 0;
+  display: none;
+  position: fixed;
+  transform: translateX(-50%);
+}
+
+.nav-list>ul>li{
+  padding: 0.5rem 1rem 0.5rem 0;
+  text-align: left;
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out; 
+  color: rgb(var(--white));
+   
+}
+
+.nav-list>ul>li:hover{
+  color: rgb(var(--light-blue));
+  border-bottom: 1px solid rgb(var(--light-blue));
+}
+
+.visible{
+  opacity: 1;
+  display: block;
+  transform: translateX(0px);
   
 }
