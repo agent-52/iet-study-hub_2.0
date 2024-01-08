@@ -39,7 +39,6 @@
 *{
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 /*------------------*/
@@ -106,7 +105,6 @@
 /*--------------*/
 /* responsive background */
 /*------------------*/
-
 
 video{
   position: fixed;
@@ -206,7 +204,8 @@ nav img{
   border: 1.5px solid rgb(var(--light-blue));
   transform-origin: bottom;
   margin-top: 1rem;
-  
+  overflow: hidden;
+
 }
 .explore-button::before{
   content: '';
@@ -270,13 +269,12 @@ h1:hover{
   opacity: 0;
   display: none;
   position: fixed;
-  transform: translateX(-50%);
 }
 
 .nav-list>ul>li{
-  padding: 0.5rem 1rem 0.5rem 0;
+  padding: 1rem 1rem 0.5rem 0;
   text-align: left;
-  transition: color 0.2s ease-in-out, border 0.2s ease-in-out; 
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
   color: rgb(var(--white));
    
 }
@@ -288,7 +286,32 @@ h1:hover{
 
 .visible{
   opacity: 1;
-  display: block;
-  transform: translateX(0px);
-  
+  display: block; 
+}
+
+/*------------*/
+/* slider */
+/*-----------*/
+
+.slider{
+  background-color: black;
+  overflow: hidden;
+}
+.slider>div{
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  padding: 1rem;
+  animation: slidershow infinite 20s linear alternate;
+}
+@keyframes slidershow {
+  from{
+    transform: translateX(100%);
+    
+  }
+  to{
+    transform: translateX(-130%);
+    opacity: 0.5;
+    
+  }
 }
