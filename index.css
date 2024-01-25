@@ -357,14 +357,25 @@ h1:hover{
 /* subject-list */
 /*-----------*/
 
-.transparent-text{
+.transparent-text1{
   color: transparent;
   flex-direction: column;
   gap: 1.5rem;
   grid-area: subjects;
 }
 
-.transparent-text > div {
+.transparent-text2{
+  color: transparent;
+  flex-direction: column;
+  gap: 1.5rem;
+  grid-area: subjects;
+}
+
+.transparent-text1 > div {
+  transition: color 0.2s ease-in-out, -webkit-text-stroke 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.transparent-text2 > div {
   transition: color 0.2s ease-in-out, -webkit-text-stroke 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
@@ -378,6 +389,12 @@ h1:hover{
 .white-subject:hover, .white-subject:focus{
   color: rgba(255, 255, 255, 0.89);
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.89); 
+  transform: perspective(20px)
+}
+
+.yellow-subject:hover, .yellow-subject:focus{
+  color: yellow;
+  -webkit-text-stroke: 1px yellow; 
   transform: perspective(20px)
 }
 
@@ -421,6 +438,9 @@ h1:hover{
 }
 .light-blue-outline{
   -webkit-text-stroke: 1px rgb(var(--light-blue)); 
+}
+.yellow-outline{
+  -webkit-text-stroke: 1px yellow 
 }
 
 main>img{
@@ -512,7 +532,7 @@ ul{
   width: 90%;
   height: min-content;
   background-color: rgba(255, 255, 255, 0.1);
-  background-filter: blur(1.5rem);
+  backdrop-filter: blur(0.5rem);
   box-shadow: inset 0px 0px 1rem rgba(255, 255, 255, 0.16);
   border-radius: 0.5rem;
 }
@@ -690,10 +710,31 @@ ul{
 }
 
 /******************/
-/**** Article *****/
+/**** Article height *****/
 /******************/
 
+main{
+  display: grid;
+  gap: 5rem;
+}
 
+
+/******************/
+/**** testimonial *****/
+/******************/
+
+.testimonial-container{
+  background-color: rgba(255, 255, 255, 0.108);
+  backdrop-filter: blur(1.5rem);
+}
+
+.testimonial-container::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.336);
+  z-index: -1;
+}
 
 
 

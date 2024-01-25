@@ -1,4 +1,6 @@
-const subjectslist1 = document.querySelector('.transparent-text');
+const subjectslist1 = document.querySelector('.transparent-text1');
+
+const subjectslist2 = document.querySelector('.transparent-text2');
 
 const mathHeading = document.querySelector('.math1');
 const mathImage = document.querySelector('.math-image');
@@ -30,63 +32,121 @@ const physicsImage = document.querySelector('.physics-image');
 const humanitiesHeading = document.querySelector('.humanities');
 const humanitiesImage = document.querySelector('.humanities-image');
 
-document.querySelector('.light-white-subject').addEventListener('mouseenter', () => {
+document.querySelector('.math1').addEventListener('mouseenter', () => {
   subjectslist1.classList.add("light-white-outline");
   subjectslist1.classList.remove("orange-outline");
 });
 
-document.querySelector('.light-white-subject').addEventListener('mouseleave', () => {
+document.querySelector('.math1').addEventListener('mouseleave', () => {
   subjectslist1.classList.add("orange-outline");
   subjectslist1.classList.remove("light-white-outline");
 });
 
+document.querySelector('.math2').addEventListener('mouseenter', () => {
+  subjectslist2.classList.add("light-white-outline");
+  subjectslist2.classList.remove("orange-outline");
+});
 
+document.querySelector('.math2').addEventListener('mouseleave', () => {
+  subjectslist2.classList.add("orange-outline");
+  subjectslist2.classList.remove("light-white-outline");
+});
 
-document.querySelector('.white-subject').addEventListener('mouseenter', () => {
+document.querySelector('.cp').addEventListener('mouseenter', () => {
+  subjectslist2.classList.add("yellow-outline");
+  subjectslist2.classList.remove("orange-outline");
+});
+
+document.querySelector('.cp').addEventListener('mouseleave', () => {
+  subjectslist2.classList.add("orange-outline");
+  subjectslist2.classList.remove("yellow-outline");
+});
+
+document.querySelector('.eme').addEventListener('mouseenter', () => {
   subjectslist1.classList.add("white-outline");
   subjectslist1.classList.remove("orange-outline");
 });
 
-document.querySelector('.white-subject').addEventListener('mouseleave', () => {
+document.querySelector('.eme').addEventListener('mouseleave', () => {
   subjectslist1.classList.add("orange-outline");
   subjectslist1.classList.remove("white-outline");
 });
 
+document.querySelector('.ed').addEventListener('mouseenter', () => {
+  subjectslist2.classList.add("white-outline");
+  subjectslist2.classList.remove("orange-outline");
+});
+
+document.querySelector('.ed').addEventListener('mouseleave', () => {
+  subjectslist2.classList.add("orange-outline");
+  subjectslist2.classList.remove("white-outline");
+});
 
 
 
-document.querySelector('.more-white-subject').addEventListener('mouseenter', () => {
+document.querySelector('.basicelectronics').addEventListener('mouseenter', () => {
   subjectslist1.classList.add("more-white-outline");
   subjectslist1.classList.remove("orange-outline");
 });
 
-document.querySelector('.more-white-subject').addEventListener('mouseleave', () => {
+document.querySelector('.basicelectronics').addEventListener('mouseleave', () => {
   subjectslist1.classList.add("orange-outline");
   subjectslist1.classList.remove("more-white-outline");
 });
 
+document.querySelector('.electrical-engineering').addEventListener('mouseenter', () => {
+  subjectslist2.classList.add("more-white-outline");
+  subjectslist2.classList.remove("orange-outline");
+});
+
+document.querySelector('.electrical-engineering').addEventListener('mouseleave', () => {
+  subjectslist2.classList.add("orange-outline");
+  subjectslist2.classList.remove("more-white-outline");
+});
 
 
-document.querySelector('.orange-subject').addEventListener('mouseenter', () => {
+
+document.querySelector('.chemistry').addEventListener('mouseenter', () => {
   subjectslist1.classList.add("more-orange-outline");
   subjectslist1.classList.remove("orange-outline");
 });
 
-document.querySelector('.orange-subject').addEventListener('mouseleave', () => {
+document.querySelector('.chemistry').addEventListener('mouseleave', () => {
   subjectslist1.classList.add("orange-outline");
   subjectslist1.classList.remove("more-orange-outline");
 });
 
 
+document.querySelector('.physics').addEventListener('mouseenter', () => {
+  subjectslist2.classList.add("more-orange-outline");
+  subjectslist2.classList.remove("orange-outline");
+});
 
-document.querySelector('.light-blue-subject').addEventListener('mouseenter', () => {
+document.querySelector('.physics').addEventListener('mouseleave', () => {
+  subjectslist2.classList.add("orange-outline");
+  subjectslist2.classList.remove("more-orange-outline");
+});
+
+
+
+document.querySelector('.english').addEventListener('mouseenter', () => {
   subjectslist1.classList.add("light-blue-outline");
   subjectslist1.classList.remove("orange-outline");
 });
 
-document.querySelector('.light-blue-subject').addEventListener('mouseleave', () => {
+document.querySelector('.english').addEventListener('mouseleave', () => {
   subjectslist1.classList.add("orange-outline");
   subjectslist1.classList.remove("light-blue-outline");
+});
+
+document.querySelector('.humanities').addEventListener('mouseenter', () => {
+  subjectslist2.classList.add("light-blue-outline");
+  subjectslist2.classList.remove("orange-outline");
+});
+
+document.querySelector('.humanities').addEventListener('mouseleave', () => {
+  subjectslist2.classList.add("orange-outline");
+  subjectslist2.classList.remove("light-blue-outline");
 });
 
 mathHeading.addEventListener('mouseenter', () => {
