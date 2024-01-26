@@ -325,3 +325,115 @@ cpHeading.addEventListener('mouseenter', () => {
   
 })
 
+
+
+testimonial = document.querySelector('.testimonial');
+testimonial1 = document.querySelector('.testimonial1');
+testimonial2 = document.querySelector('.testimonial2');
+testimonial3 = document.querySelector('.testimonial3');
+testimonial4 = document.querySelector('.testimonial4');
+testimonial5 = document.querySelector('.testimonial5');
+testimonial6 = document.querySelector('.testimonial6');
+
+imageBox = document.querySelector('.testimonial-small-image-container');
+imageBox1 = document.querySelector('.testimonial-small-image-container1');
+imageBox2 = document.querySelector('.testimonial-small-image-container2');
+imageBox3 = document.querySelector('.testimonial-small-image-container3');
+imageBox4 = document.querySelector('.testimonial-small-image-container4');
+imageBox5 = document.querySelector('.testimonial-small-image-container5');
+
+imageBox.addEventListener('mouseenter', () =>{
+  testimonial1.classList.add('visible1')
+  testimonial1.classList.remove('hidden')
+  testimonial.classList.add('hidden')
+  testimonial2.classList.add('hidden')
+  testimonial2.classList.remove('visible1')
+  testimonial3.classList.add('hidden')
+  testimonial3.classList.remove('visible1')
+  testimonial4.classList.add('hidden')
+  testimonial4.classList.remove('visible1')
+  testimonial5.classList.add('hidden')
+  testimonial5.classList.remove('visible1')
+  testimonial6.classList.add('hidden')
+  testimonial6.classList.remove('visible1')
+})
+
+imageBox1.addEventListener('mouseenter', () =>{
+  testimonial2.classList.add('visible1')
+  testimonial2.classList.remove('hidden')
+  testimonial.classList.add('hidden')
+  testimonial1.classList.add('hidden')
+  testimonial1.classList.remove('visible1')
+  testimonial3.classList.add('hidden')
+  testimonial3.classList.remove('visible1')
+  testimonial4.classList.add('hidden')
+  testimonial4.classList.remove('visible1')
+  testimonial5.classList.add('hidden')
+  testimonial5.classList.remove('visible1')
+  testimonial6.classList.add('hidden')
+  testimonial6.classList.remove('visible1')
+})
+
+imageBox2.addEventListener('mouseenter', () =>{
+  testimonial3.classList.add('visible1')
+  testimonial3.classList.remove('hidden')
+  testimonial.classList.add('hidden')
+  testimonial1.classList.add('hidden')
+  testimonial1.classList.remove('visible1')
+  testimonial2.classList.add('hidden')
+  testimonial2.classList.remove('visible1')
+  testimonial4.classList.add('hidden')
+  testimonial4.classList.remove('visible1')
+  testimonial5.classList.add('hidden')
+  testimonial5.classList.remove('visible1')
+  testimonial6.classList.add('hidden')
+  testimonial6.classList.remove('visible1')
+})
+
+imageBox3.addEventListener('mouseenter', () =>{
+  testimonial4.classList.add('visible1')
+  testimonial4.classList.remove('hidden')
+  testimonial.classList.add('hidden')
+  testimonial1.classList.add('hidden')
+  testimonial1.classList.remove('visible1')
+  testimonial2.classList.add('hidden')
+  testimonial2.classList.remove('visible1')
+  testimonial3.classList.add('hidden')
+  testimonial3.classList.remove('visible1')
+  testimonial5.classList.add('hidden')
+  testimonial5.classList.remove('visible1')
+  testimonial6.classList.add('hidden')
+  testimonial6.classList.remove('visible1')
+})
+
+imageBox4.addEventListener('mouseenter', () =>{
+  testimonial5.classList.add('visible1')
+  testimonial5.classList.remove('hidden')
+  testimonial.classList.add('hidden')
+  testimonial1.classList.add('hidden')
+  testimonial1.classList.remove('visible1')
+  testimonial2.classList.add('hidden')
+  testimonial2.classList.remove('visible1')
+  testimonial3.classList.add('hidden')
+  testimonial3.classList.remove('visible1')
+  testimonial4.classList.add('hidden')
+  testimonial4.classList.remove('visible1')
+  testimonial6.classList.add('hidden')
+  testimonial6.classList.remove('visible1')
+})
+
+imageBox5.addEventListener('mouseenter', () =>{
+  testimonial6.classList.add('visible1')
+  testimonial6.classList.remove('hidden')
+  testimonial.classList.add('hidden')
+  testimonial1.classList.add('hidden')
+  testimonial1.classList.remove('visible1')
+  testimonial2.classList.add('hidden')
+  testimonial2.classList.remove('visible1')
+  testimonial3.classList.add('hidden')
+  testimonial3.classList.remove('visible1')
+  testimonial4.classList.add('hidden')
+  testimonial4.classList.remove('visible1')
+  testimonial5.classList.add('hidden')
+  testimonial5.classList.remove('visible1')
+})

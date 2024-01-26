@@ -134,6 +134,7 @@
 .inline-padding{padding-inline: var(--inline-padding, 2rem)}
 .block-padding{padding-block: var(--block-padding, 1rem);}
 .align-centre{align-items: center;}
+.align-self-centre{align-self: center;}
 .justify-centre{justify-content: center;}
 
 
@@ -309,10 +310,6 @@ h1:hover{
   border-bottom: 1px solid rgb(var(--light-blue));
 }
 
-.visible{
-  opacity: 1;
-  display: block; 
-}
 
 /*------------*/
 /* slider */
@@ -507,8 +504,6 @@ main img{
 .visible{
   display: block;
   opacity: 1;
-  
-  
 }
 @keyframes slidein {
   0%{
@@ -767,6 +762,15 @@ main{
 /**** testimonial *****/
 /******************/
 
+.visible1{
+  opacity: 1;
+  display: inline-flex;
+}
+
+.testimonial-box{
+  width: 100%;
+}
+
 
 .testimonial-large-image-container{
   width: 100px;
@@ -781,14 +785,14 @@ main{
   height: 100%;
   border-radius: 50%;
   transform: scale(0.9);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .testimonial-large-image:hover{
   transform: scale(1);
 }
 
-.testimonial-small-image-container,.testimonial-small-image-container1,.testimonial-small-image-container2,.testimonial-small-image-container3{
+.testimonial-small-image-container,.testimonial-small-image-container1,.testimonial-small-image-container2,.testimonial-small-image-container3,.testimonial-small-image-container4,.testimonial-small-image-container5{
   width: 70px;
   height: 70px;
   border: 3px solid white;
@@ -797,20 +801,102 @@ main{
 }
 
 .testimonial-small-image-container{
-  
+  left: 17%;
+  top: 5%;
+  animation: random_motion_1 10s linear infinite alternate;
 
 }
 .testimonial-small-image-container1{
-  bottom: 0;
+  right: 17%;
+  top: 5%;
+  animation: random_motion_2 10s linear infinite alternate;
 }
 .testimonial-small-image-container2{
-  right: 0;
+  right: 10%;
+  bottom: 35%;
+  animation: random_motion_1 10s linear infinite alternate;
   
 }
 .testimonial-small-image-container3{
-  left: 0;
-  bottom: 50%;
-  transform: translateX(-100%);
+  left: 10%;
+  bottom: 35%;
+  animation: random_motion_3 10s linear infinite alternate;
+  
+  
+}
+.testimonial-small-image-container4{
+  left: 17%;
+  bottom: 5%;
+  animation: random_motion_2 10s linear infinite alternate;
+  
+}
+.testimonial-small-image-container5{
+  right: 17%;
+  bottom: 5%;
+  animation: random_motion_3 10s linear infinite alternate;
+}
+
+@keyframes random_motion_1 {
+  0%{
+    transform: translate(0);
+  }
+  20%{
+    transform: translate(0.2rem, 0.2rem);
+  }
+  40%{
+    transform: translate(-0.3rem, 0.3rem);
+  }
+  60%{
+    transform: translateX(0.5rem);
+  }
+  80%{
+    transform: translateX(-0.5rem);
+  }
+  100%{
+    transform: translate(0.3rem);
+  } 
+}
+
+@keyframes random_motion_2 {
+  0%{
+    transform: translate(0);
+  }
+  80%{
+    transform: translate(0.2rem, 0.2rem);
+  }
+  60%{
+    transform: translate(-0.3rem, 0.3rem);
+  }
+  40%{
+    transform: translateX(0.5rem);
+  }
+  20%{
+    transform: translateX(-0.5rem);
+  }
+  100%{
+    transform: translate(0.3rem);
+  }
+}
+
+@keyframes random_motion_3 {
+  0%{
+    transform: translate(0);
+  }
+  20%{
+    transform: translate(0.3rem, 0.5rem);
+  }
+  40%{
+    transform: translate(-0.2rem, -0.1rem);
+  }
+  60%{
+    transform: translateX(0.4rem);
+  }
+  80%{
+    transform: translateX(-0.4,0.2rem);
+  }
+  100%{
+    transform: translate(-0.3rem);
+  } 
 }
 
 .testimonial-small-image{
@@ -828,10 +914,23 @@ main{
 
 .testimonial-container{
   margin-block: 4rem;
+  overflow: hidden;
 }
 
-.testimonial{
+.testimonial,.testimonial1,.testimonial2,.testimonial3,.testimonial4,.testimonial5,.testimonial6{
   width: fit-content;
+  animation: fade-out 0.5s ease-in-out 1 alternate;
+}
+
+@keyframes fade-out {
+ 0%{
+  opacity: 0;
+  transform: translateY(50%)
+ } 
+ 100%{
+  opacity: 1;
+  
+ }
 }
 
 .testimonial span{
@@ -844,8 +943,9 @@ main{
 }
 
 .testimonial-content{
-  background-color: rgba(255, 255, 255, 0.108);
-  backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.5rem);
+  box-shadow: inset 0px 0px 1rem rgba(255, 255, 255, 0.16);
 }
 
 
