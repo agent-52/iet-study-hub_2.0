@@ -5,6 +5,9 @@ const subjectslist2 = document.querySelector('.transparent-text2');
 const mathHeading = document.querySelector('.math1');
 const mathImage = document.querySelector('.math-image');
 
+const cpHeading = document.querySelector('.cp');
+const cpImage = document.querySelector('.computer-image');
+
 const emeHeading = document.querySelector('.eme');
 const emeImage = document.querySelector('.eme-image');
 
@@ -235,6 +238,8 @@ math2Heading.addEventListener('mouseenter', () => {
   edImage.classList.add('hidden')
   humanitiesImage.classList.remove('visible')
   humanitiesImage.classList.add('hidden')
+  cpImage.classList.remove('visible')
+  cpImage.classList.add('hidden')
   
  
 })
@@ -250,6 +255,8 @@ edHeading.addEventListener('mouseenter', () => {
   math2Image.classList.add('hidden')
   humanitiesImage.classList.remove('visible')
   humanitiesImage.classList.add('hidden')
+  cpImage.classList.remove('visible')
+  cpImage.classList.add('hidden')
  
 })
 
@@ -264,6 +271,8 @@ eeHeading.addEventListener('mouseenter', () => {
   math2Image.classList.add('hidden')
   humanitiesImage.classList.remove('visible')
   humanitiesImage.classList.add('hidden')
+  cpImage.classList.remove('visible')
+  cpImage.classList.add('hidden')
   
 })
 
@@ -278,6 +287,8 @@ physicsHeading.addEventListener('mouseenter', () => {
   math2Image.classList.add('hidden')
   humanitiesImage.classList.remove('visible')
   humanitiesImage.classList.add('hidden')
+  cpImage.classList.remove('visible')
+  cpImage.classList.add('hidden')
   
 })
 
@@ -292,6 +303,25 @@ humanitiesHeading.addEventListener('mouseenter', () => {
   edImage.classList.add('hidden')
   math2Image.classList.remove('visible')
   math2Image.classList.add('hidden')
+  cpImage.classList.remove('visible')
+  cpImage.classList.add('hidden')
+  
+})
+
+
+cpHeading.addEventListener('mouseenter', () => {
+  cpImage.classList.remove('hidden')
+  cpImage.classList.add('visible')
+  physicsImage.classList.remove('visible')
+  physicsImage.classList.add('hidden')
+  eeImage.classList.remove('visible')
+  eeImage.classList.add('hidden')
+  edImage.classList.remove('visible')
+  edImage.classList.add('hidden')
+  math2Image.classList.remove('visible')
+  math2Image.classList.add('hidden')
+  humanitiesImage.classList.remove('visible')
+  humanitiesImage.classList.add('hidden')
   
 })
 
