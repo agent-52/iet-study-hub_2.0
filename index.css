@@ -801,37 +801,37 @@ main{
 }
 
 .testimonial-small-image-container{
-  left: 17%;
+  left: 5%;
   top: 5%;
   animation: random_motion_1 10s linear infinite alternate;
 
 }
 .testimonial-small-image-container1{
-  right: 17%;
+  right: 5%;
   top: 5%;
   animation: random_motion_2 10s linear infinite alternate;
 }
 .testimonial-small-image-container2{
   right: 10%;
-  bottom: 35%;
+  bottom: 39%;
   animation: random_motion_1 10s linear infinite alternate;
   
 }
 .testimonial-small-image-container3{
   left: 10%;
-  bottom: 35%;
+  bottom: 39%;
   animation: random_motion_3 10s linear infinite alternate;
   
   
 }
 .testimonial-small-image-container4{
-  left: 17%;
+  left: 5%;
   bottom: 5%;
   animation: random_motion_2 10s linear infinite alternate;
   
 }
 .testimonial-small-image-container5{
-  right: 17%;
+  right: 5%;
   bottom: 5%;
   animation: random_motion_3 10s linear infinite alternate;
 }
@@ -946,6 +946,7 @@ main{
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.5rem);
   box-shadow: inset 0px 0px 1rem rgba(255, 255, 255, 0.16);
+  height: 180px;
 }
 
 
