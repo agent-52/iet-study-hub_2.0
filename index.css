@@ -162,12 +162,11 @@ header{
   display: grid;
 }
 
-header::before{
+.home_page::before{
   content: '';
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   inset: 0;
-  
   z-index: -1;
 }
 p{
@@ -452,9 +451,11 @@ main::before{
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.336);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
+
+
 
 main>article{
   display: grid;
@@ -918,7 +919,7 @@ main{
 }
 
 .testimonial-container{
-  margin-block: 5rem;
+  padding-block: 5rem;
   overflow: hidden;
 }
 
@@ -951,7 +952,14 @@ main{
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.5rem);
   box-shadow: inset 0px 0px 1rem rgba(255, 255, 255, 0.16);
-  height: 180px;
+  height: 195px;
+}
+.testimonial-container::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
 
